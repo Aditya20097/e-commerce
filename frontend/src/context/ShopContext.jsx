@@ -134,7 +134,7 @@ const ShopContextProvider = (props)=>{
 
         const getProductData = async () => {
             try {
-                const response =axios.get("https://klicksy-backend.vercel.app/api/product/list")
+                const response = await axios.get("https://klicksy-backend.vercel.app/api/product/list")
 
                 if(response.data.success) {
                     setProduct(response.data.products)
