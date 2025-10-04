@@ -16,7 +16,11 @@ connectCloudinary()
 // middelwares
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: ["https://klicksy-frontend.vercel.app/"],
+  credentials: true
+}));
+
 
 // api endpoint
 app.use('/api/user', userRouter)
