@@ -17,7 +17,7 @@ connectCloudinary()
 
 app.use(express.json())
 // app.use(cors());
-import cors from "cors";
+
 
 app.use(cors({
   origin: [
