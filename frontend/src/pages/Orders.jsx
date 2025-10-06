@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const Orders = () => {
 
-  const { currency,token} = useContext(ShopContext)
+  const { currency,token,backendUrl} = useContext(ShopContext)
 
   const [orderData , setOrderData] = useState([])
 

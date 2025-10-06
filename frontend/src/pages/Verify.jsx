@@ -7,7 +7,7 @@ import { toast } from 'react-toastify'
 import axios from 'axios'
 const Verify = () => {
 
-const {navigate, token, setCartItems} = useContext(ShopContext)
+const {navigate, token, setCartItems,backendUrl} = useContext(ShopContext)
 const [searchParam , setSearchParams] = useSearchParams()
 
 const success = searchParam.get('success')
