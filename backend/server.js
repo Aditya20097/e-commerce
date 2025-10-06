@@ -19,14 +19,7 @@ app.use(express.json())
 // app.use(cors());
 
 
-app.use(cors({
-  origin: [
-    "https://klicksy-frontend.vercel.app",
-    "https://klicksy-admin.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(cors());
 
 
 
