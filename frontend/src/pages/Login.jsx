@@ -17,7 +17,7 @@ const Login = () => {
         const response = await axios.post(`${backendUrl}/api/user/registar`, {
           name,
           email,
-          password,
+          password
         });
         if (response.data.success) {
           setToken(response.data.token);
@@ -93,7 +93,7 @@ const Login = () => {
             onClick={() => setCurrentState("SignUp")}
             className="cursor-pointer"
           >
-            {" "}
+            {""}
             Create Account{" "}
           </p>
         ) : (
@@ -101,7 +101,7 @@ const Login = () => {
             onClick={() => setCurrentState("Login")}
             className="cursor-pointer"
           >
-            {" "}
+            {""}
             Login Account
           </p>
         )}
